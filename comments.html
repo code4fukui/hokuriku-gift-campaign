@@ -8,6 +8,7 @@
 import { CSV } from "https://js.sabae.cc/CSV.js";
 import { cr } from "https://js.sabae.cc/cr.js";
 import { QRCode } from "https://code4fukui.github.io/qr-code/qr-code.js";
+import { DateTime } from "https://js.sabae.cc/DateTime.js";
 
 const data = await CSV.fetchJSON("all_ja.csv");
 for (const item of data) {
@@ -16,7 +17,8 @@ for (const item of data) {
   const comment = item[name];
   if (!comment) continue;
   const div = cr("div", main);
-  div.textContent = `${item.QRコード読取日時} ${comment} (${item.国籍}/${item.性別})`;
+  const age = new DateTime().day.year - parseInt(item.生まれ年);
+  div.textContent = `${item.QRコード読取日時} [${item.エリア}] ${comment} (${item.国籍.trim()}/${age}才/${item.性別}/${item["認知経路(施設)ALL"].trim()})`;
 }
 
 document.body.appendChild(new QRCode());
