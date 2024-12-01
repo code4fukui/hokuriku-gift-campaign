@@ -11,6 +11,7 @@ import { QRCode } from "https://code4fukui.github.io/qr-code/qr-code.js";
 import { DateTime } from "https://js.sabae.cc/DateTime.js";
 
 const data = await CSV.fetchJSON("all_ja.csv");
+data.reverse();
 for (const item of data) {
   const name = "推奨度の理由(旅行)_ja";
   console.log(item);
@@ -25,12 +26,7 @@ document.body.appendChild(new QRCode());
 </script>
 
 <style>
-table {
-  border-collapse: collapse;
-}
-th, td {
-  border: 1px solid black;
-  padding: .1em .2em;
-  font-size: 80%;
+#main > div {
+  margin: .4em 0;  
 }
 </style>
