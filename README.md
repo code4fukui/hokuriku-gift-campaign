@@ -1,5 +1,7 @@
 # hokuriku-gift-campaign
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 This repository contains open data from a survey conducted at <https://welcome-hokuriku.jp>. The data is used in the [Hokuriku Inbound Tourism DX Open Data Visualization Web Application](https://hokuriku-inbound-kanko.github.io/hokuriku-inbound-kanko-visualization/) where it can be viewed as graphs.
 
 This repository is published by the [Hokuriku Inbound Tourism DX Data Consortium](https://github.com/hokuriku-inbound-kanko).
