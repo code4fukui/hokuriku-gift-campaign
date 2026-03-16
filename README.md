@@ -10,4 +10,4 @@ This repository is published by the [Hokuriku Inbound Tourism DX Data Consortium
 The repository contains CSV files with survey data, which are automatically updated daily. The data is fetched from an SFTP server and converted from Shift-JIS to UTF-8 encoding.
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).
